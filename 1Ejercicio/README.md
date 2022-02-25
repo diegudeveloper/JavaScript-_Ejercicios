@@ -39,4 +39,4 @@
 
 ## Imagen del Ejercicio:
 
-![Imagen del Ejercicio](https://github.com/diegudeveloper/Proyecto02_Cards/blob/main/1erEjercicio/img/ejercicio1.png)
+![Imagen del Ejercicio](https://github.com/diegudeveloper/JavaScript-_Ejercicios/blob/gh-pages/1Ejercicio/ejercicio1/img/ejercicio1.png)
