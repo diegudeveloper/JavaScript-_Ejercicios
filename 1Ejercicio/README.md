@@ -10,26 +10,26 @@
     <details>
         <summary> Template: </summary>
     
-        * Es un mecanismo para mantener el contenido HTML del lado del cliente que no se renderiza cuando se carga una página, pero que posteriormente puede ser instanciado durante el tiempo de ejecución empleando JavaScript.
+         Es un mecanismo para mantener el contenido HTML del lado del cliente que no se renderiza cuando se carga una página, pero que posteriormente puede ser instanciado durante el tiempo de ejecución empleando JavaScript.
 
-        * Piensa en la plantilla como un fragmento de contenido que está siendo almacenado para un uso posterior en el documento.
+        Piensa en la plantilla como un fragmento de contenido que está siendo almacenado para un uso posterior en el documento.
 
-        * El analizador procesa el contenido del elemento template durante la carga de la página, pero solo lo hace para asegurar que esos contenidos son válidos; sin embargo, estos contenidos del elemento no se renderizan.
+        El analizador procesa el contenido del elemento template durante la carga de la página, pero solo lo hace para asegurar que esos contenidos son válidos; sin embargo, estos contenidos del elemento no se renderizan.
 
-        * los elementos template contienen un DocumentFragment en su propiedad HTMLTemplateElement.content.
+        los elementos template contienen un DocumentFragment en su propiedad HTMLTemplateElement.content.
     </details>
 
     <details>
         <summary> Fragment: </summary>
 
-        * La interfaz DocumentFragment representa un objeto de documento mínimo que no tiene padre.
+        La interfaz DocumentFragment representa un objeto de documento mínimo que no tiene padre.
 
-        * Se utiliza como una versión ligera de Document que almacena un segmento de una estructura de documento compuesta de nodos como un documento estándar.
+        Se utiliza como una versión ligera de Document que almacena un segmento de una estructura de documento compuesta de nodos como un documento estándar.
 
-        * La gran diferencia se debe al hecho de que el fragmento de documento no forma parte de la estructura de árbol del documento activo.
+        La gran diferencia se debe al hecho de que el fragmento de documento no forma parte de la estructura de árbol del documento activo.
 
-        * Los cambios realizados en el fragmento no afectan el documento (incluso en reflow) ni inciden en el rendimiento cuando se realizan cambios.
-        
+        Los cambios realizados en el fragmento no afectan el documento (incluso en reflow) ni inciden en el rendimiento cuando se realizan cambios.
+
     </details>
 
 
