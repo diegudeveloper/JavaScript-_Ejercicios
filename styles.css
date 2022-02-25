@@ -39,3 +39,10 @@ main section article a {
     text-decoration: none;
     color: #000;
 }
+
+@media screen and (max-width: 550px) {
+    main section article {
+        margin: 30px auto;
+        
+    }
+}
