@@ -46,3 +46,10 @@ main section article a {
         
     }
 }
+
+@media screen and (min-width: 768px) {
+    main section article {
+        margin: 30px auto;
+        
+    }
+}
