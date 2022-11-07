@@ -31,6 +31,7 @@ main section {
 
 main section article {
     width: 80%;
+    max-width: 270px;
     height: 270px;
     margin: 30px auto;
     border: 1px solid #000;
@@ -59,9 +60,9 @@ main section article a {
     }
 }*/
 
-@media screen and (min-width: 768px) {
+/* @media screen and (max-width: 1040px) {
     main section article {
-        max-width: 33%;
+        max-width: 25%;
         
     }
-} 
+}  */
