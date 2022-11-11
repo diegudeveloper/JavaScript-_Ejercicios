@@ -14,6 +14,6 @@ btnadd.addEventListener('click', (e) => {
 					</li> 
 					`
 	
-	
+	input.value = '';
 
 });
