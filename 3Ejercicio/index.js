@@ -5,6 +5,7 @@ const ul = document.querySelector("ul");
 
 btnadd.addEventListener('click', (e) => {
 	e.preventDefault();
+	
 
 	let newValue = input.value;
 
@@ -15,5 +16,11 @@ btnadd.addEventListener('click', (e) => {
 					`
 	
 	input.value = '';
+	tareasPendientes();
 
 });
+
+let tareasPendientes = () => {
+	// let pendientes = list_tareas.querySelectorAll('p');
+	list_tareas.innerHTML = `<p>Tareas Pendientes 5</p>`;
+}
