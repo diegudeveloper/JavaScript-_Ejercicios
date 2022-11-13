@@ -53,7 +53,7 @@ input {
 }
 
 .listado-tareas ul > li {
-    width: 250px;
+    width: 100%;
     margin: 1rem auto;
     background-color: #a2a2a2;
     padding: .7rem;
@@ -63,7 +63,7 @@ input {
     align-items: center;
 }
 
-.listTareas p {
+#listTareas p {
     width: 90%;
     margin: 0 auto;
     text-align: center;
