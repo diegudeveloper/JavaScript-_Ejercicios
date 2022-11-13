@@ -9,13 +9,14 @@ btnadd.addEventListener('click', (e) => {
 
 	let newValue = input.value;
 
-	div.innerHTML += `<ul class="lista" id="${Idcounter}">
-						<li class="li">
-							<p>${newValue}</p>
-							<button class="deletebtn">Delete</button> 
-						</li> 
-					</ul>
-					`
+	if(input.value != '')
+		div.innerHTML += `<ul class="lista" id="${Idcounter}">
+							<li class="li">
+								<p>${newValue}</p>
+								<button class="deletebtn">Delete</button> 
+							</li> 
+						</ul>
+						` 
 	
 	input.value = '';
 	tareasPendientes();
@@ -25,12 +26,13 @@ btnadd.addEventListener('click', (e) => {
 div.addEventListener('click', (event) => {
 	if(event.srcElement.nodeName == 'BUTTON') {
 		deleteTask(event.srcElement.parentNode.parentElement.id);
+
 	};
 })
 
 let tareasPendientes = () => {
 	let pendientes = div.querySelectorAll('ul');
-	listTareas.innerHTML = `<p>Tareas Pendientes ${pendientes.length}</p>`;
+	listTareas.innerHTML = `<p>Pending tasks ${pendientes.length}</p>`;
 }
 
 let deleteTask = (id) => {

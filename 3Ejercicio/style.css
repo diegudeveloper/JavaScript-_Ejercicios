@@ -4,12 +4,27 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
 .container-full {
     width: 90%;
     max-width: 390px;
-    height: 100vh;
-    margin: 0 auto;
+    height: 600px;
+    border-radius: 5px;
     padding-top: 5rem;
+    border: 1px solid #000;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75)
 }
 
 h1 {
@@ -37,6 +52,13 @@ input {
     border: none;
     border-radius: 0.3rem;
     font-size: 0.8rem;
+    transition: all ease 0.3s;
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+.btn-add:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.75);
 }
 
 .listado-tareas {
@@ -55,8 +77,8 @@ input {
 .listado-tareas ul > li {
     width: 100%;
     margin: 1rem auto;
-    background-color: #a2a2a2;
-    padding: .7rem;
+    background-color: #fff;
+    padding: .3rem;
     border-radius: 0.3rem;
     display: flex;
     justify-content: space-between;
