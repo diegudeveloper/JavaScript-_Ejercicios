@@ -45,6 +45,7 @@ main section article {
 main section article img {
     width: 100%;
     height: 70%;
+    object-fit: cover;
 }
 
 main section article a {

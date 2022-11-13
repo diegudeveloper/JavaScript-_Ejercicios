@@ -16,8 +16,7 @@ btnadd.addEventListener('click', (e) => {
 								<button class="deletebtn">Delete</button> 
 							</li> 
 						</ul>
-						` 
-	
+						`
 	input.value = '';
 	tareasPendientes();
 
@@ -29,6 +28,8 @@ div.addEventListener('click', (event) => {
 
 	};
 })
+
+
 
 let tareasPendientes = () => {
 	let pendientes = div.querySelectorAll('ul');
