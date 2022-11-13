@@ -1,18 +1,20 @@
 const input = document.querySelector('input[type="text"]');
 const btnadd = document.querySelector(".btn-add");
-const ul = document.querySelector("ul");
-
+const div = document.querySelector(".list");
+let Idcounter = 0;
 
 btnadd.addEventListener('click', (e) => {
 	e.preventDefault();
-	
+	Idcounter++;
 
 	let newValue = input.value;
 
-	ul.innerHTML += `<li class="li">
-						<p>${newValue}</p>
-						<button class="deletebtn">Delete</button>
-					</li> 
+	div.innerHTML += `<ul class="lista" id="${Idcounter}">
+						<li class="li">
+							<p>${newValue}</p>
+							<button class="deletebtn">Delete</button> 
+						</li> 
+					</ul>
 					`
 	
 	input.value = '';
@@ -21,6 +23,6 @@ btnadd.addEventListener('click', (e) => {
 });
 
 let tareasPendientes = () => {
-	// let pendientes = list_tareas.querySelectorAll('p');
-	list_tareas.innerHTML = `<p>Tareas Pendientes 5</p>`;
+	let pendientes = div.querySelectorAll('ul');
+	listTareas.innerHTML = `<p>Tareas Pendientes ${pendientes.length}</p>`;
 }

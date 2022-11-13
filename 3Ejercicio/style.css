@@ -63,7 +63,7 @@ input {
     align-items: center;
 }
 
-.list-tareas p {
+.listTareas p {
     width: 90%;
     margin: 0 auto;
     text-align: center;
