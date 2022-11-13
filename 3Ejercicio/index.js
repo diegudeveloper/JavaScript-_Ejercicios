@@ -22,6 +22,13 @@ btnadd.addEventListener('click', (e) => {
 
 });
 
+div.addEventListener('click', (event) => {
+	if(event.srcElement.nodeName == 'BUTTON') {
+		// console.log(event.srcElement.);
+		console.log(event.srcElement.parentNode.parentElement.id);
+	};
+})
+
 let tareasPendientes = () => {
 	let pendientes = div.querySelectorAll('ul');
 	listTareas.innerHTML = `<p>Tareas Pendientes ${pendientes.length}</p>`;
