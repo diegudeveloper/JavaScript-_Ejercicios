@@ -46,5 +46,5 @@ $iniciar.addEventListener('click', (e) => {
         mostrarReloj();
     })
     e.target.disabled = true;
-    console.log(e.target.disabled = false);
+    console.log(e.target.disabled = true);
 })
