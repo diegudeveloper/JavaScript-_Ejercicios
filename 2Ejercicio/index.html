@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
 </head>
 <body>
-
-    <h1>Enunciado del ejercicio:</h1>
-
-    <h3>Primera parte: </h3>
-        
-    <ul>
-        <li>
-            Crear una función con tres parámetros que sean números que se suman entre sí.
-        </li>
-        <li>
-            Llamar a la función en el main y darle valores.
-        </li>
-    </ul> 
-        
-        
-    <h3>Segunda  parte: </h3>
-    <ul>
-        <li>
-            Crear una clase coche.
-        </li>
-        <li>
-            Dentro de la clase coche, una variable numérica que almacene el número de puertas que tiene.
-        </li>
-        <li>
-            Una función que incremente el número de puertas que tiene el coche.
-        </li>
-        <li>
-            Crear un objeto miCoche en el main y añadirle una puerta.
-        </li>
-        <li>
-            Mostrar el número de puertas que tiene el objeto.
-        </li>
-    </ul>
+    <div class="container">
+        <header class="header">
+            <h1 class="main_text">Ejercicios del DOM</h1>
+        </header>
+        <main class="main">
+            <button class="panel-btn hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <div class="seccion " id="section1">
+                <h3>Reloj Digital y Alarma Sonora</h3>
+                <div class="reloj">
+                    <h4 id="showTime"></h4>
+                    <button id="iniciar">Iniciar Reloj</button>
+                    <button id="detener">Detener Reloj</button>
+                    <button id="iAlarma">Iniciar Alarma</button>
+                    <button id="dAlarma">Detener Alarma</button>
+                </div>
+            </div>
+            <div class="seccion " id="section2">Sección 2</div>
+            <div class="seccion " id="section3">Sección 3</div>
+            <div class="seccion " id="section4">Sección 4</div>
+            <div class="seccion " id="section5">Sección 5</div>
+            <nav class="nav nav-hamburguer">
+                <ul class="menu">
+                    <li class="li"><a href="#section1">Reloj Digital y Alarma Sonora</a></li>
+                    <li class="li"><a href="#section2">Seccion 2</a></li>
+                    <li class="li"><a href="#section3">Seccion 3</a></li>
+                    <li class="li"><a href="#section4">Seccion 4</a></li>
+                    <li class="li"><a href="#section5">Seccion 5</a></li>
+                </ul>
+            </nav>
+        </main>
+    </div>
+    <script src="/index.js"></script>
 </body>
 </html>
